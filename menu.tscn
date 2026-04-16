@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bf7esd05mer8v"]
+
+[ext_resource type="Script" uid="uid://6gnj3ydjva75" path="res://main_menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://yrcfb3rmtlv5" path="res://kevin.png" id="2_ouk20"]
+
+[node name="Node2D" type="Node2D" unique_id=705039996]
+script = ExtResource("1_lti8b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1177894477]
+position = Vector2(315, 205)
+rotation = -0.35116944
+scale = Vector2(2.171765, 2.131609)
+texture = ExtResource("2_ouk20")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1156658628]
+offset_left = 274.0
+offset_top = 169.0
+offset_right = 553.0
+offset_bottom = 226.0
+scale = Vector2(2, 2)
+tooltip_text = "the really cool menu text :D"
+text = "Kevin The Machine!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=295539535]
+offset_left = 408.0
+offset_top = 405.0
+offset_right = 681.0
+offset_bottom = 446.0
+text = "Play!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
