@@ -1,4 +1,6 @@
-Button
+CollisionShape2D
+Area2D
 Sprite2D
+Button
 RichTextLabel
 Label
